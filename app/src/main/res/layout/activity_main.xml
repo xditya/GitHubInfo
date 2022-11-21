@@ -12,23 +12,22 @@
         android:layout_width="match_parent"
         android:layout_height="179dp"
         android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/github_logo" />
+        app:srcCompat="@drawable/github_logo"
+        android:contentDescription="@string/github_profile_picture" />
 
-    <EditText
-        android:id="@+id/edtUserName"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|center_horizontal"
-        android:layout_margin="15dp"
-        android:layout_marginStart="20dp"
-        android:autofillHints="xditya"
-        android:ems="10"
-        android:gravity="center|center_horizontal|center_vertical"
-        android:hint="@string/github_username"
-        android:inputType="textPersonName"
-        android:padding="20dp"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="246dp" />
+        app:endIconMode="clear_text"
+        android:hint="@string/github_username">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_marginStart="20dp"
+            android:padding="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnSubmit"

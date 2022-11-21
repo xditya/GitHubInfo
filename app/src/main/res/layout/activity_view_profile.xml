@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewProfile">
+
+    <ImageView
+        android:id="@+id/imgProfilePic"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/profilepic"
+        app:srcCompat="@drawable/github_logo" />
+
+    <TextView
+        android:id="@+id/tvViewDetails"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:text="@string/loading_details" />
+
+    <Button
+        android:id="@+id/btnOpenProfile"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_margin="5dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:text="@string/open_profile_on_github"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
+
+    <Button
+        android:id="@+id/btnMainActivity"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_margin="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:text="@string/go_back"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
+</LinearLayout>

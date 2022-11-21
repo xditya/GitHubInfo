@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="179dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/github_logo" />
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_margin="15dp"
+        android:layout_marginStart="20dp"
+        android:autofillHints="xditya"
+        android:ems="10"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:hint="@string/github_username"
+        android:inputType="textPersonName"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:text="@string/submit"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="333dp" />
+
+</LinearLayout>

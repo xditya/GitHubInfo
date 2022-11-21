@@ -3,8 +3,9 @@
     <string name="github_username">GitHub Username</string>
     <string name="submit">Submit</string>
     <string name="profilepic">ProfilePic</string>
-    <string name="loading_details">Loading Details...</string>
-    <string name="open_profile_on_github">Open Profile On Github</string>
+    <string name="loading_details">Loading Details…</string>
+    <string name="open_profile_on_github">Open Profile On GitHub</string>
     <string name="go_back">Go Back</string>
     <string name="userNotFound">User Not Found!</string>
+    <string name="github_profile_picture">GitHub Profile Picture</string>
 </resources>

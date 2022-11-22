@@ -97,9 +97,6 @@ public class ViewProfile extends AppCompatActivity {
         // Add the request to the RequestQueue.
         queue.add(stringRequest);
 
-        btnMainActivity.setOnClickListener(view -> {
-            Intent intent1 = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(intent1);
-        });
+        btnMainActivity.setOnClickListener(view -> finish());
     }
 }

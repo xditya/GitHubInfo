@@ -1,5 +1,6 @@
 package me.xditya.githubinfo;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
             Intent intent = new Intent(getApplicationContext(), ViewProfile.class);
             intent.putExtra("username", username);
-            startActivity(intent);
+            startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
         });
     }
 }
